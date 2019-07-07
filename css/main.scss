@@ -1,0 +1,9 @@
+@import './reset';
+@import './variables';
+@import './utilities';
+// General Class
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+@import './workout.scss';

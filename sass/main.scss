@@ -1,0 +1,41 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+// Variables
+$primary: #2e3235;
+$text-color: #fff;
+// General Class
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 100%;
+}
+
+.container {
+    width: 80%;
+}
+
+.container-fluid {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: $text-color;
+}
+
+main {
+    color: $text-color;
+    height: 100vh;
+    background: $primary no-repeat url('../img/hero_workout.jpg');
+    background-size: cover;
+    .page-ui-hero {
+        text-align: center;
+        padding-top: 60px;
+        margin: 0 auto;
+    }
+}

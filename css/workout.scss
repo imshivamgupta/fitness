@@ -1,0 +1,133 @@
+main {
+    color: $text-color;
+    background-image: linear-gradient(rgba(93, 91, 91, 0.72), black), url(../img/hero_workout.jpg);
+    background-size: cover;
+    .page-ui-hero {
+        text-align: center;
+        padding: 60px 0;
+        margin: 0 auto;
+        .page-ui-header {
+            display: flex;
+            justify-content: space-evenly;
+            margin-bottom: 60px;
+            font-weight: 700;
+            a {
+                display: flex;
+                align-items: center;
+                &[role="brand_sponsor second"] {
+                    .circular {
+                        background-color: tomato;
+                        color: $text-color;
+                    }
+                }
+            }
+        }
+        .page-ui-title {
+            width: 80%;
+            font-size: 58px;
+            @media screen and (max-width: 400px) {
+                font-size: 32px;
+            }
+            word-spacing: 8px;
+            text-transform: capitalize;
+            font-weight: 500;
+            margin: 0 auto;
+        }
+        .page-ui-para {
+            color: $secondary;
+            width: 80%;
+            font-size: 22px;
+            word-spacing: 4px;
+            margin: 60px auto;
+        }
+        .btn-group {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            a {
+                margin-top: 20px;
+                color: #ffdd00;
+                font-weight: 600;
+            }
+        }
+    }
+}
+
+section.details {
+    text-align: center;
+    padding: 60px 0;
+    background-color: $bg-color;
+    color: $text-color;
+    .img-group {
+        display: flex;
+        justify-content: center;
+        padding: 60px 0 0 0;
+        .img {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 400px;
+            justify-content: center;
+            margin: 0 20px;
+            background-color: #444444;
+            border: 1px solid #ffdd00;
+            overflow: hidden;
+            h3 {
+                content: '';
+                text-decoration: underline;
+            }
+            h3,
+            p {
+                padding: 10px 20px 0 20px;
+                text-align: center;
+            }
+            figure {
+                margin-top: 10px;
+                img {
+                    width: 100%;
+                    height: 200px;
+                    object-fit: cover;
+                    object-position: 50% 30%;
+                }
+            }
+        }
+    }
+}
+
+section.pricing {
+    padding: 60px 0;
+    padding-bottom: 0;
+    margin: 0;
+    text-align: center;
+    background-color: $bg-color;
+    color: #d8d8d8;
+    h1,
+    p {
+        width: 80%;
+        margin: 0 auto;
+    }
+    p {
+        padding: 20px 0;
+    }
+    .cta {
+        margin: 60px 0;
+    }
+    .pricing-box {
+        display: flex;
+        justify-content: center;
+        .price {
+            width: 300px;
+            height: 200px;
+            margin: 0 10px;
+            background-image: linear-gradient(#ffdd00, rgba(255, 84, 71, 0.08));
+        }
+    }
+}
+
+footer {
+    background-color: $bg-color;
+    color: #d8d8d8;
+    text-align: center;
+    margin-top: -20px;
+    font-weight: 600;
+}
